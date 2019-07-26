@@ -5,7 +5,7 @@ from discord.ext import commands
 
 #Servers {}
 
-TOKEN = 'NTQzNDI4OTk5NDE4ODcxODI4.XTm3mA.FZCow1bg5l-2YcoC9bOghV9BN2Q'
+TOKEN = 'NTQzNDI4OTk5NDE4ODcxODI4.XTsKFQ.1vyVQBBmlQERSYYYFrpYpVjWzfM'
 
 client = commands.Bot(command_prefix = '>>')
 
