@@ -5,14 +5,14 @@ from discord.ext import commands
 
 #Servers {}
 
-TOKEN = 'NjA0MTg4MDEzMTM5OTg0Mzg0.XTqUYg.ly6epEBn7rBCSwkdrk7j933oAjY'
+TOKEN = 'NTQzNDI4OTk5NDE4ODcxODI4.XTm3mA.FZCow1bg5l-2YcoC9bOghV9BN2Q'
 
 client = commands.Bot(command_prefix = '>>')
 
 @client.event
 async def on_ready():
     print('test')
-    await client.change_presence(activity=discord.Streaming(name="SinaKR's Discord | Users {}".format(len(client.guilds), len(client.users)), url="https://www.twitch.tv/ardankjr"))
+    await client.change.presence(game=discord.Game(name='No Direct Message', type=0))
 
 
 client.run(TOKEN)
