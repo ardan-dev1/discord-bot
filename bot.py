@@ -119,4 +119,4 @@ async def on_message(message):
 
 #client setting
 client.loop.create_task(change_status())
-client.run('NjA0MTg4MDEzMTM5OTg0Mzg0.XUJnog.rNyxgOYCqdWj_iCgPBUxN1mcVfI')
+client.run('NjA0MTg4MDEzMTM5OTg0Mzg0.XUQUkA.yZcmpWk62HBgLJQXcXAu_-PULMY')
