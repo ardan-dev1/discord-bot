@@ -83,8 +83,6 @@ async def on_message(message):
 
         embed.set_author(name='Credits')
         embed.add_field(name='Master Developer', value='``ArdanKR_#9290``', inline=True)
-        embed.add_field(name='STAFF', value='``KimHarBle_#5879`` | ``카톡!#0001``', inline=False)
-        embed.add_field(name='Helper', value='``KimHarBle_#5879``', inline=False)
         embed.add_field(name='Code', value='``PYTHON``', inline=False)
         embed.add_field(name='Hosting', value='``Heroku 24 hour``', inline=False)
         embed.add_field(name='Other', value='`Copyright ⓒ 2019 ArdanKR_#9290 All right reserved`', inline=False)
