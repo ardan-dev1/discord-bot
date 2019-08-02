@@ -74,7 +74,6 @@ async def on_message(message):
         embed.set_author(name='XSplace Bot Command List')
         embed.add_field(name='**General Command**', value='``>>help`` , ``>>avatar`` , ``>>list`` , ``>>userinfo`` , ``>>about``', inline=True)
         embed.add_field(name='**Bot Information**', value='``>>delvoper``', inline=False)
-        embed.add_field(name='**Moderator**', value='``>>ban [mention]``, ``>>kick [mention]``', inline=False)
         embed.add_field(name='**Other**', value='`Copyright ⓒ 2019 ArdanKR_ All right reserved`', inline=False)
         embed.set_footer(text='Thanks to use XSplace. If you have an error or problem, please contact ArdanKR_#9290')
         await client.send_message(message.channel, embed=embed)
