@@ -119,4 +119,5 @@ async def on_message(message):
 
 #client setting
 client.loop.create_task(change_status())
-client.run('NjA0MTg4MDEzMTM5OTg0Mzg0.XUQUkA.yZcmpWk62HBgLJQXcXAu_-PULMY')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
