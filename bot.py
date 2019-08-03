@@ -8,7 +8,7 @@ from itertools import cycle
 
 #client config
 
-status = ['Prefix = ">>"', 'ArdanKR_#9290', '>>help']
+status = ["Prefix = '>>'", 'ArdanKR_#9290', '>>help', "접두사 = '>>'", 'ArdanKR_#9290', '>>도움말', 'Mention Me', '저를 호출해보세요']
 
 client = commands.Bot(command_prefix = '>>')
 client.remove_command('help')
@@ -33,7 +33,7 @@ async def on_message(message):
         embed.set_author(name=message.author.name + '#' + message.author.discriminator + "'s Profile")
         embed.add_field(name='**Nickname & Tag**', value=message.author.name + '#' + message.author.discriminator, inline=True)
         embed.add_field(name='**In-Server Name**', value=message.author.display_name, inline=True)
-        embed.add_field(name='**Account creation date**', value=str(date.year) + '년 ' + str(date.month) + '월 ' + str(date.day) + '일 ', inline=True)
+        embed.add_field(name='**Account creation date**', value=str(date.year) + 'Y ' + str(date.month) + 'M ' + str(date.day) + 'D ', inline=True)
         embed.add_field(name='**User ID**', value=message.author.id, inline=True)
         embed.set_thumbnail(url=message.author.avatar_url)
         embed.set_footer(text='Requested by • ' + message.author.name + '#' + message.author.discriminator)
@@ -92,6 +92,14 @@ async def on_message(message):
         embed.set_footer(text='XSplace By ArdanKR_#9290', icon_url='https://cdn.discordapp.com/attachments/603214980707516416/606795951037743123/1564741015418.png')
 
         await client.send_message(message.channel, embed=embed)
+        
+    if message.content.startswith('<@604188013139984384>'):
+        date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
+        embed = discord.Embed(color=0x6184ff)
+        
+        await client.send_message(message.channel, "제 명령어 목록을 보시려면 '>>도움말'을 사용해주세요")
+        await client.send_message(message.channel, "'>>help' to see bot command list")
+
 
 #client setting
 client.loop.create_task(change_status())
